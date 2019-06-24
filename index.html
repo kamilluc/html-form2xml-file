@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/css/bare.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Input Creator</title>
+    <link rel="shortcut icon" type="image/png" href="/css/icons/git.png" />
+  </head>
+  <body>
+    <nav>
+      <header>
+        <a href="https://github.com/luckamil?tab=repositories">
+          <img src="css/icons/git.png" />Powrót do repozytorium</a
+        >
+      </header>
+    </nav>
+
+    <form class="container">
+      <h1>Parametry Procesu</h1>
+      <strong>Automaty</strong>
+      <label>Rozmiar (długość boku sześcianu)</label>
+      <input type="text" placeholder="100" data-tag="size" />
+
+      <label>Ilość zarodków</label>
+      <input type="text" placeholder="5" data-tag="nucleons" />
+      <strong>Wydzielenia</strong>
+      <br /><br />
+      <input type="file" id="myFile" />
+
+      <button id="import">WCZYTAJ XML</button>
+      <button primary id="export">UTWÓRZ XML</button>
+    </form>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
